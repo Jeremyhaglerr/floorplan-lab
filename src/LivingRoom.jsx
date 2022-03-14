@@ -1,8 +1,8 @@
 
 function LivingRoom(props) {
   return (
-    <div>
-      <h1 id={'living-room'}> Living Room</h1>
+    <div id={'living-room'}>
+      <h1> Living Room</h1>
     </div>
   );
 }

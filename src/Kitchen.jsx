@@ -4,9 +4,11 @@ import Sink from "./Sink";
 function Kitchen(props) {
   return (
     <div id={'kitchen'}>
-      <h1> kitchen </h1>
+      <div id='appliances'>
       <Oven/>
       <Sink/>
+      </div>
+      <h1> kitchen </h1>
     </div>
   );
 }
