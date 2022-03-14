@@ -1,31 +1,71 @@
 
 
+  
+
   #floor-plan {
+    text-align: center;
+    color: white;
+    margin: 25% auto;
+    height: 50vh;
+    width: 50vw;
     border: 1px solid grey;
-    margin: 5px;
-    padding: 5px;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr 1fr 1fr;
+    grid-template-rows: 3fr 1.5fr 3fr;
+    grid-template-areas: 
+    "bed1 livingroom livingroom kitchen"
+    "fullBath livingroom livingroom kitchen"
+    "bed2 halfBath bed3 bed3";
   }
 
   #living-room{
-    background-color: green;
-  }
-
-  .bedroom {
-    background-color: blue;
+    background-color: rgb(201,171,130);
+    grid-area: livingroom;
   }
 
   #kitchen{
-    background-color: orange;
+    background-color: rgb(242,167,59);
+    grid-area: kitchen;
+  }
+
+  #appliances {
+    display: flex;
   }
 
   #oven{
-    background-color: red;
+    background-color: rgb(201,71,22);
+    width: 50%;
   }
 
   #sink{
-background-color: darkred;
+    background-color: rgb(147,86,19);
+    width: 50%
+  }
+
+  .bedroom {
+    background-color: rgb(42,113,136);
+  }
+
+  #bed-1 {
+    grid-area: bed1;
+  }
+
+  #bed-2 {
+    grid-area: bed2;
+  }
+
+  #bed-3 {
+    grid-area: bed3;
   }
 
   .bath{
-background-color: purple;
+    background-color: rgb(114,136,48);
+  }
+
+  #Full-bath {
+    grid-area: fullBath;
+  }
+
+  #Half-bath {
+    grid-area: halfBath;
   }
